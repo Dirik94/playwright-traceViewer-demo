@@ -9,7 +9,7 @@ let itemName
 test.describe('Make purchase', async () => {
 
     test('Buy item trough item page', async ({ page, baseURL, login, cart, inventory  }) => {
-        page.goto(baseURL!);
+        await page.goto(baseURL!);
         await login.userName_type('standard_user');
         await login.userPassword_type('secret_sauce');
         await login.login_button_click();
@@ -39,7 +39,7 @@ test.describe('Make purchase', async () => {
     });
 
     test('Buy item trough main page', async ({ page, baseURL, login, cart, inventory  }) => {
-        page.goto(baseURL!);
+        await page.goto(baseURL!);
         await login.userName_type('standard_user');
         await login.userPassword_type('secret_sauce');
         await login.login_button_click();

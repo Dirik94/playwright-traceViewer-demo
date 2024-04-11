@@ -9,5 +9,8 @@
   "devDependencies": {
     "@playwright/test": "^1.40.0",
     "@types/node": "^20.10.0"
+  },
+  "dependencies": {
+    "playwright": "^1.43.0"
   }
 }
