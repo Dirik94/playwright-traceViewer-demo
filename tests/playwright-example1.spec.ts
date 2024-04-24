@@ -12,6 +12,7 @@ test.describe('Make purchase', async () => {
         await page.goto(baseURL!);
         await login.userName_type('standard_user');
         await login.userName_type('standard_user');
+        await login.userName_type('standard_user');
         await login.userPassword_type('secret_sauce');
         await login.login_button_click();
 
